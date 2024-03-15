@@ -52,6 +52,8 @@ const AP_Scheduler::Task Sub::scheduler_tasks[] = {
     FAST_TASK(run_rate_controller),
     // send outputs to the motors library immediately
     FAST_TASK(motors_output),
+    // send serial data to the Falcon motors
+    FAST_TASK(falcon_output),
      // run EKF state estimator (expensive)
     FAST_TASK(read_AHRS),
     // Inertial Nav

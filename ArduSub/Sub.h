@@ -498,6 +498,7 @@ private:
     void set_surfaced(bool at_surface);
     void set_bottomed(bool at_bottom);
     void motors_output();
+	void falcon_output();
     void init_rc_in();
     void init_rc_out();
     void enable_motor_output();
